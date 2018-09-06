@@ -1,15 +1,14 @@
-from setuptools import setup
+import setuptools
 
-setup(
+setuptools.setup(
     name='django-access-logger',
-    version='0.4.2',
+    version='0.4.3',
     description='Access logging for Django, the right way',
-    author="Étienne Lafarge",
-    author_email="etienne.lafarge@gmail.com",
-    url="https://github.com/elafarge/django-access-logger",
-    # TODO: download URL
+    author="Dreem",
+    author_email="luc@dreem.com",
+    url="https://github.com/Dreem-Organization/django-access-logger",
     license='Apache2',
-    packages=['django_access_logger'],
+    packages=setuptools.find_packages(),
     zip_safe=False,
     install_requires=[],
     include_package_data=True,
@@ -27,5 +26,5 @@ setup(
         'Framework :: Django',
         'Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware',
         'Topic :: System :: Logging',
-  ],
+    ],
 )
